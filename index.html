@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro Animation</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <script src="script.js" > </script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="overlay">
+            <p class="screen">SELCIATO</p>
+            <div class="intro">
+                    <button class="myBtn" onclick="fadeOut()">Click to Explore</button>
+            </div>
+        </div>
+
+        <div class="overlay-2"></div>
+
+        <div class="content">
+          <div class="header">
+            
+               <nav class="site-nav">
+                       <h1>Selciato</h1>
+                   <div class="up_nav">
+              
+               <div><img class="site_logo" src="bilder/logo.png" alt="site_logo"></div>
+               <ul class="right_up">
+               <li><span><input type="text" class="search rounded" placeholder="Search..."></span></li>
+       
+               <li><div class="header__link--mobile header__link--desktop header__link--basket-container">
+                       <a class="header-wishlist-icon wishlist-hidden" href="" title="">
+                           <span class="font-icon-wishlist-v2"></span>
+                       </a>
+                       <a id="js-basket-link" class="header-basket-icon header__link--basket" href="/checkout/cart/" title="Basket">
+                           <span class="font-icon-Basket"></span>
+                           <span id="basket_qty" class="header__link--basket-qty"><img class="basket" src="bilder/shop.png" alt=""></span>
+                       </a>
+                   </div></li>
+               </ul>
+                   </div>
+       
+                  
+       
+         <ul class="sidebar">
+                        <li class="accordion__item">
+                                <h3>Home</h3>
+                                <div class="accordion__content"></div>
+                       </li>
+                       <li class="accordion__item">
+                               <h3>Produkte</h3>
+                         
+                       </li>
+                       <li class="accordion__item">
+                               <h3>Kontakt</h3>
+                               <div class="accordion__content"></div>
+                               </li>
+                    </ul>
+                   
+                  
+                  
+                  
+                   </nav>
+                </div>
+       
+       <ul class="header_container">
+
+        
+               
+                    
+        
+         <li> <div class="secondwall">
+               <img id="light" class="header_foto" src="bilder/panel1foto.jpeg" alt="Sessel_foto"> 
+                
+              <div class="text_header_second"> 
+                  <h2>Chair & Life</h2>
+               <p class="text_header_info" >We find the best independent designers and makers around the world to create your pieces.</p>
+               <button class="produkt_button_first" >Read More</button>
+
+            </div>
+       </div>
+       </li>
+         
+       
+       </ul>
+
+       <div class="favories">
+            <h4>Our Favourites</h4>
+
+            <ul class="Favorie_produkte">
+                    <li>
+                      <div class="produkt_1">
+                           
+                        <div class="imageBox_1">
+                            <div class="imageInn">
+                              <img src="bilder/bar.jpg" alt="Default Image">
+                            </div>
+                            <div class="hoverImg">
+                              <img src="bilder/bar2.jpg" alt="Profile Image">
+                            </div>
+                          </div>
+                           
+                           <p>Margot Barstool</p>
+                           <span>€100</span>
+                           <button class="produkt_button" id="produkt-button">Add To Chard</button>
+                         
+
+                      </div>
+                      
+                    </li>
+                    <li>
+                       <div class="produkt_2">
+                        <div class="imageBox_2">
+                            <div class="imageInn">
+                              <img src="bilder/lampe.jpg" alt="Default Image">
+                            </div>
+                            <div class="hoverImg">
+                              <img src="bilder/lampe2.jpg" alt="Profile Image">
+                            </div>
+                          </div>
+                                
+
+                          
+                            <p>Vidola Lamp</p>
+                            <span>€80</span>
+                            <button class="produkt_button" >Add To Chard</button>
+                       </div>
+                    </li>
+                    <li>
+                        <div class="produkt_3">
+                            <div class="imageBox_3">
+                                <div class="imageInn">
+                                  <img src="bilder/table1.png" alt="Default Image">
+                                </div>
+                                <div class="hoverImg">
+                                  <img src="bilder/table1_kopie.png" alt="Profile Image">
+                                </div>
+                              </div>
+                                 <p>Cyza table </p>
+                              <span>€1200</span>
+                              <button class="produkt_button" >Add To Chard</button>
+                         </div>
+                    </li>
+                    <li>
+                         <div class="produkt_4">
+                            <div class="imageBox_4">
+                                <div class="imageInn">
+                                  <img src="bilder/table2.png" alt="Default Image">
+                                </div>
+                                <div class="hoverImg">
+                                  <img src="bilder/table2_kopie.png" alt="Profile Image">
+                                </div>
+                              </div>
+                            <p>Bölm Table</p>
+                               <span>€1100</span>
+                               <button class="produkt_button" >Add To Chard</button>
+                         </div>
+                    </li>
+                
+                
+
+            </ul>
+            
+       </div>
+    
+     <section>
+
+
+        <div class="Hovered">
+
+            <ul class="Hovers">
+                <li><a href="#">SHOP BY CATEGORY</a></li>
+                <li><a href="#">SHOP BY ROOM</a></li>
+                <li><a href="#">SHOP BY STYLE</a></li>
+            </ul>
+
+            <div class="Content">
+                <div class="Category">
+                        <ul>
+                                <li>
+                                    <a href="#">SOFAS</a>
+                                </li>
+                                <li>
+                                    <a href="#">TABLES</a>
+                                </li>
+                                <li>
+                                    <a href="#">CHAIRS</a>
+                                </li>
+                                <li>
+                                    <a href="#">LIGHTING</a>
+                                </li>
+                        </ul>
+                        <ul class="category_img"> <li> <img src="bilder/foto-chair.jpg" alt=""></li></ul>
+                       
+                </div>
+                <div class="Room">
+                        <ul>
+                                <li>
+                                    <a href="#">LIVING ROOM</a>
+                                </li>
+                                <li>
+                                    <a href="#">DINING ROOM</a>
+                                </li>
+                                <li>
+                                    <a href="#">BED ROOM</a>
+                                </li>
+                        </ul>
+                        <ul class="room_img"><li> <img src="bilder/foto-kitchen.jpeg" alt=""></li></ul>
+
+                       
+                </div>
+                <div class="Style">
+                        <ul>
+                                <li>
+                                    <a href="#">SCANDINAVIAN</a>
+                                </li>
+                                <li>
+                                    <a href="#">INDUSTRIAL</a>
+                                </li>
+                                <li>
+                                    <a href="#">RETRO</a>
+                                </li>
+                                <li>
+                                    <a href="#">MODERN</a>
+                                </li>
+                                
+                        </ul>
+                        <ul class="style_img"> <li> <img src="bilder/foto-SCANDINAVIAN.jpg" alt=""></li></ul>
+
+                        
+                       
+                </div>
+
+
+            </div>
+        </div>
+
+
+          
+        
+        
+        
+
+       
+
+
+     </section>
+     <div class="j-to-top"><img class="up-icon" src="bilder/up.png" alt="icon"></div>
+        <footer>
+			<div class="footer">
+				<div class="left_list">
+					<ul class="left_footer_list">
+						<li><a href="#">JOBS</a></li>
+						<li><a href="#">IMPRESSUM</a></li>
+						<li><a href="#">FOLLOW US</a></li>
+						<li><img src="bilder/pinterest.png" alt="pinterest logo" >   <img src="bilder/instagram-2.png"  alt=""> </li>
+					</ul>
+				</div>
+				<div class="right_list">
+						
+						<ul class="right_footer_list">
+								
+							<li><img src="bilder/call.png"  alt="icon"> </li>
+							<li><a href="#">+43681817188</a></li>
+							<li><img src="bilder/mail.png" alt="icon" > </li>
+							<li><a href="#">email@selciato.com</a></li>
+						</ul>
+					</div>
+			</div>
+
+		</footer>
+       
+       
+       </div>
+        </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    var scrollanimation;
+document.querySelector('.j-to-top').addEventListener('click', function(_event){
+		_event.preventDefault();
+		
+		var duration = 1; 
+		
+		var pos = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+		
+		var step_width = pos / (60 * duration)
+		scrollanimation = setInterval(function(){
+				pos = pos - step_width;
+				if(pos < 1) {
+						pos = 0;
+						clearInterval(scrollanimation);
+						scrollanimation = null;
+				}
+				
+				document.documentElement.scrollTop = document.body.scrollTop = pos;
+		}, 1000 / 60);  
+});
+
+var prev_post = null;
+window.addEventListener('scroll', function(){
+		var scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+		if(prev_post !== null) {
+				
+				if(prev_post < scrollTop) {
+						
+						if(scrollanimation !== null) {
+								clearInterval(scrollanimation);
+						}
+				}
+		}
+		
+		prev_post = scrollTop;
+});</script>
+    
+    
+    
+    
+    
+    
+    <script>
+    var lis = document.querySelectorAll('.Hovers > li');
+		
+    for(var i = 0; i < lis.length; i++) {
+
+        lis[i].addEventListener('mouseenter', function(_e){
+
+            var li_siblings = _e.target.parentNode.children;
+
+            
+            for(var i = 0; i < li_siblings.length; i++) {
+                li_siblings[i].classList.remove('active');
+            }
+            _e.target.classList.add('active');
+
+            
+            var content_divs = _e.target.parentNode.parentNode.querySelectorAll('.Content > div');
+
+            for(var i = 0; i < li_siblings.length; i++) {
+                
+                if(li_siblings[i].classList.contains('active')) {
+                    content_divs[i].style = "display:flex;justify-content: space-around" ;
+                    
+                    
+                    
+                } else {
+                    content_divs[i].style.display = "none";
+                }
+            }
+
+        });
+    }
+
+    var erste_tab_lis = document.querySelectorAll('.Hovered .Hovers > li:first-child');
+    for(var i = 0; i < erste_tab_lis.length; i++) {
+        erste_tab_lis[i].dispatchEvent(new Event('mouseenter'));
+
+
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
